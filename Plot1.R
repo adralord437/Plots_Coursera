@@ -34,3 +34,8 @@ with(data2, hist(x = Global_active_power, col = "red", xlab = "Global Active Pow
 
 # Closing Graphic Device
 dev.off()  
+
+# Saving dataset data2 to use it with the other plots
+write.csv(data2,file = "./data/data.csv")
+
+
