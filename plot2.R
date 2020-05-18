@@ -31,4 +31,5 @@ with(data,plot(x = datetime,y = Global_active_power,
 # Closing graph device
 dev.off()
 
-
+# Saving dataset to use it with plots that involve time
+write.csv(data,file = "./data/data_time.csv")
